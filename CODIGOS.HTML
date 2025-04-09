@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo, ajusta a largura para o dispositivo -->
+    <title>Formulário de E-mail</title>
+    <style>
+        /* Estilo geral para o corpo da página */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do texto na página */
+            margin: 0; /* Remove as margens padrão da página */
+            padding: 0; /* Remove o preenchimento padrão da página */
+            display: flex; /* Usa o modelo de layout flexbox */
+            justify-content: center; /* Alinha o conteúdo ao centro horizontalmente */
+            align-items: center; /* Alinha o conteúdo ao centro verticalmente */
+            height: 100vh; /* Define a altura do corpo como 100% da altura da tela */
+            background-color: #f4f4f4; /* Define a cor de fundo da página (cinza claro) */
+        }
+
+        /* Estilo para o formulário */
+        form {
+            background-color: white; /* Define o fundo do formulário como branco */
+            padding: 20px; /* Adiciona um espaçamento interno ao redor do formulário */
+            border-radius: 8px; /* Arredonda os cantos do formulário */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do formulário */
+            width: 300px; /* Define a largura do formulário */
+        }
+
+        /* Estilo para o campo de entrada de e-mail */
+        input[type="email"] {
+            width: 100%; /* Faz o campo de entrada ocupar 100% da largura disponível */
+            padding: 10px; /* Adiciona um espaçamento interno no campo */
+            font-size: 16px; /* Define o tamanho da fonte no campo de entrada */
+            border: 2px solid #ccc; /* Define a cor e a espessura da borda do campo (cinza claro) */
+            border-radius: 4px; /* Arredonda os cantos da borda do campo */
+            box-sizing: border-box; /* Inclui o padding na largura e altura do campo */
+            transition: border-color 0.3s ease; /* Adiciona uma transição suave na cor da borda ao focar */
+        }
+
+        /* Mudar a cor do texto para o campo de e-mail */
+        input[type="email"] {
+            color: #FF5733; /* Cor do texto (vermelho alaranjado) no campo de e-mail */
+        }
+
+        /* Mudar a cor da borda quando o campo de e-mail estiver em foco */
+        input[type="email"]:focus {
+            border-color: #007bff; /* Cor da borda quando o campo estiver em foco (azul) */
+            outline: none; /* Remove a borda padrão de foco no campo */
+        }
+
+        /* Estilo para o botão de envio */
+        input[type="submit"] {
+            background-color: #007bff; /* Cor de fundo do botão de envio (azul) */
+            color: white; /* Cor do texto no botão (branco) */
+            border: none; /* Remove a borda do botão */
+            padding: 10px 20px; /* Adiciona um espaçamento interno ao botão */
+            font-size: 16px; /* Define o tamanho da fonte no botão */
+            border-radius: 4px; /* Arredonda os cantos do botão */
+            cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+            transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
+        }
+
+        /* Mudar a cor do botão ao passar o mouse sobre ele */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Cor de fundo do botão quando o mouse estiver sobre ele (azul escuro) */
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <!-- Rótulo para o campo de e-mail -->
+        <label for="email">E-mail:</label> <!-- O "for" associa o rótulo ao campo de entrada com o id="email" -->
+
+        <!-- Campo de entrada para o e-mail -->
+        <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"> <!-- Cria um campo de entrada de e-mail com validação obrigatória e um texto de dica -->
+
+        <!-- Botão de envio do formulário -->
+        <input type="submit" value="Enviar"> <!-- Cria um botão para enviar o formulário -->
+    </form>
+
+</body>
+</html>
